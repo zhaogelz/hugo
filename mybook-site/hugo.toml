@@ -1,3 +1,131 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+# hugo server --minify --themesDir ../..
+
+# 站点基本配置
+baseURL = 'http://0.0.0.0:1313/'
+title = 'Hugo Book'
+theme = 'hugo-book'
+
+# Book 配置相关
+# disablePathToLower: true 表示禁用路径转小写
+# enableGitInfo: true 表示启用 Git 信息
+disablePathToLower = true
+enableGitInfo = true
+
+# markdown 渲染相关配置，支持 mermaid/katex
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 5
+
+# 多语言模式配置
+# 通过文件名翻译和通过内容目录翻译两种方式
+[languages]
+[languages.zh]
+  languageName = 'Chinese'
+  contentDir = 'content.zh'
+  weight = 1
+# [languages.en]
+#   languageName = 'English'
+#   contentDir = 'content.en'
+#   weight = 2
+
+# [languages.he]
+#   languageName = 'Hebrew'
+#   contentDir = 'content.he'
+#   languageDirection = 'rtl'
+#   weight = 3
+
+[menu]
+[[menu.home]]
+  name = "Documentation"
+  url = "/docs/example/"
+  weight = 1
+
+[[menu.home]]
+  name = "Showcases"
+  url = "/showcases/"
+  weight = 2
+
+[[menu.home]]
+  name = "Github"
+  url = "https://github.com/alex-shpak/hugo-book/"
+  weight = 3
+
+# 页脚菜单配置
+# [[menu.before]]
+# [[menu.after]]
+#   name = "Github"
+#   url = "https://github.com/alex-shpak/hugo-book/"
+#   weight = 10
+
+# [[menu.after]]
+#   name = "Hugo Themes"
+#   url = "https://themes.gohugo.io/themes/hugo-book/"
+#   weight = 20
+
+# 主题参数配置
+[params]
+  # (可选，默认 light) 设置主题色：light、dark 或 auto。
+  # Theme 'auto' 会根据浏览器或操作系统的偏好在深色和浅色模式之间切换
+  BookTheme = 'auto'
+
+  # (可选，默认 true) 控制页面右侧目录显示。
+  # 目录的开始和结束层级可以通过 markup.tableOfContents 设置
+  # 也可以在页面的前置参数中单独指定
+  BookToC = true
+
+  # (可选，默认 favicon.png) 设置 favicon 路径。
+  # 如果 favicon 位于 /static/favicon.png，则路径应为 favicon.png
+  # BookFavicon = 'favicon.png'
+
+  # (可选，默认无) 设置 logo 路径。
+  # 如果 logo 位于 /static/logo.png，则路径应为 logo.png
+  # BookLogo = 'logo.png'
+
+  # (可选，默认 docs) 指定根页面以菜单形式渲染子页面。
+  # 页面通过 .GetPage 函数解析： https://gohugo.io/functions/getpage/
+  # 为了向后兼容，可以将此项设置为 '*'，表示渲染所有章节到菜单，效果同 '/'
+   #BookSection = 'docs'
+BookSection = '*'
+
+  # 兼容性参数，非必需。
+  BookRepo = 'https://github.com/alex-shpak/hugo-book/'
+
+  # (可选) 配置页面最后修改和 commit 链接。
+  # 启用后，页面底部会显示“最后修改”的信息及链接
+  BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
+
+  # (可选) 配置“编辑此页”链接。
+  # 启用后，页面底部会显示“编辑此页”的链接
+  #BookEditLink = '{{ .Site.Params.BookRepo }}/edit/main/exampleSite/{{ .Path }}'
+
+  # (可选，默认 'January 2, 2006') 配置页面日期格式。
+  # 用于 git 信息和博客文章中
+  BookDateFormat = 'January 2, 2006'
+
+  # (可选，默认 true) 启用搜索功能。
+  # 使用 fuse.js 实现，索引会动态生成，可能会影响网站速度
+  # 每种语言的索引配置可在 i18n 文件夹中调整
+  BookSearch = true
+
+  # (可选，默认 true) 启用评论模板。
+  # 默认情况下，partals/docs/comments.html 包含 Disqus 模板
+  # 可通过页面前置参数中的相同参数覆盖
+  BookComments = true
+
+  # /!\ 这是一个实验性功能，可能会随时被移除或更改
+  # (可选，实验性，默认 false) 启用便携链接和链接检查。
+  # 便携链接旨在与文本编辑器配合使用，让您可以无须 {{< relref >}} 短代码直接编写 markdown
+  # 如果 markdown 中引用的页面不存在，主题会发出警告
+  BookPortableLinks = true
+
+  # /!\ 这是一个实验性功能，可能会随时被移除或更改
+  # (可选，实验性，默认 false) 启用离线缓存。
+  # 服务工作线程会缓存访问过的页面和资源
+  BookServiceWorker = true
+
+  # /!\ 这是一个实验性功能，可能会随时被移除或更改
+  # (可选，实验性，默认 false) 启用仅在有翻译时才显示的下拉菜单。
+  BookTranslatedOnly = false
