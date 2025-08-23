@@ -1,1 +1,0 @@
-在docker desktop停止项目，github下载最新的，用旧版的.env文件还有docker-compose.yml替换新版的，然后用原本的启动命令启动
