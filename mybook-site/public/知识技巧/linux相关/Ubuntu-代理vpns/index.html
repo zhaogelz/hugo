@@ -27,7 +27,9 @@ V2rayA：
 用法：先勾选节点-》再左上角 就绪（启动）">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/Ubuntu-%E4%BB%A3%E7%90%86vpns/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/Ubuntu-%E4%BB%A3%E7%90%86vpns/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="V2rayA方案弃用，不支持vless协议。改用xray
@@ -405,7 +407,15 @@ curl
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

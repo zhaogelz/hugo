@@ -9,7 +9,9 @@ mklink /D &ldquo;链接所在路径&rdquo; “文件实际路径”
 把D盘文件夹A,链接到c盘，注意：c盘链接前不能存在A。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E8%BD%AF%E9%93%BE%E6%8E%A5/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E8%BD%AF%E9%93%BE%E6%8E%A5/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="cmd执行
@@ -375,7 +377,15 @@ mklink /D &ldquo;链接所在路径&rdquo; “文件实际路径”</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

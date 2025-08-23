@@ -6,7 +6,9 @@
 <meta name="description" content="将编码格式改为GBK，用UTF-8win系统识别不了，乱码。（因为终端用的GBK）">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/bat%E6%96%87%E4%BB%B6%E6%B3%A8%E6%84%8F/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/bat%E6%96%87%E4%BB%B6%E6%B3%A8%E6%84%8F/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="将编码格式改为GBK，用UTF-8win系统识别不了，乱码。（因为终端用的GBK）">
@@ -366,7 +368,15 @@ https://github.com/alex-shpak/hugo-book
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

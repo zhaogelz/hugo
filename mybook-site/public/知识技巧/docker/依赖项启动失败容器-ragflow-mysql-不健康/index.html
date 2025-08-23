@@ -13,7 +13,9 @@ wsl &ndash;import docker-desktop D:\docker\docker-desktop D:\docker\docker-deskt
 补充：重装wsl，重装docker desktop都试过，均无效。按上文操作才好。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E4%BE%9D%E8%B5%96%E9%A1%B9%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E5%AE%B9%E5%99%A8-ragflow-mysql-%E4%B8%8D%E5%81%A5%E5%BA%B7/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E4%BE%9D%E8%B5%96%E9%A1%B9%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E5%AE%B9%E5%99%A8-ragflow-mysql-%E4%B8%8D%E5%81%A5%E5%BA%B7/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="我也出现该问题，同时发现win系统的wsl也损坏了。1、通过该工具修复了wsl：https://github.com/microsoft/WSL/releases
@@ -368,7 +370,15 @@ wsl &ndash;import docker-desktop D:\docker\docker-desktop D:\docker\docker-deskt
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

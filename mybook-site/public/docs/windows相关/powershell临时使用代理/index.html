@@ -19,7 +19,9 @@ curl -x socks5://127.0.0.1:10808
 也可用笔记linux相关 Ubuntu 代理vpn（s）">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/powershell%E4%B8%B4%E6%97%B6%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/powershell%E4%B8%B4%E6%97%B6%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="本地代理端口为10808的情况下
@@ -400,7 +402,15 @@ curl -x socks5://127.0.0.1:10808
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

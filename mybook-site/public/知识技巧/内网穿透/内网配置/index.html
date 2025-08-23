@@ -56,7 +56,9 @@ localPort = 12345 # 内网服务监听的端口
 remotePort = 8500 # 需要在公网服务器上监听的端口">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%86%85%E7%BD%91%E9%85%8D%E7%BD%AE/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%86%85%E7%BD%91%E9%85%8D%E7%BD%AE/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="注意是frpc.toml文件，服务器是frps.toml # 配置公网服务器上frp服务的IP与端口 # #serverAddr = “144.34.232.235”
@@ -477,7 +479,15 @@ remotePort = 8500 # 需要在公网服务器上监听的端口</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

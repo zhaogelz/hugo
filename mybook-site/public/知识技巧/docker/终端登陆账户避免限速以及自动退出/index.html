@@ -10,7 +10,9 @@ docker login -u 1539097490 -p 520pk1314
 关闭当前shell，自动退出 trap &lsquo;docker logout&rsquo; SIGHUP">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E7%BB%88%E7%AB%AF%E7%99%BB%E9%99%86%E8%B4%A6%E6%88%B7%E9%81%BF%E5%85%8D%E9%99%90%E9%80%9F%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%8A%A8%E9%80%80%E5%87%BA/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E7%BB%88%E7%AB%AF%E7%99%BB%E9%99%86%E8%B4%A6%E6%88%B7%E9%81%BF%E5%85%8D%E9%99%90%E9%80%9F%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%8A%A8%E9%80%80%E5%87%BA/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="登陆命令：docker login
@@ -359,7 +361,15 @@ https://github.com/alex-shpak/hugo-book
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

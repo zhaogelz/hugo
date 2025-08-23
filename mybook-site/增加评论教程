@@ -1,0 +1,7 @@
+参考:https://waline.js.org/guide/get-started/  进行部署
+参考:https://blog.gitcode.com/4024da08c8711dbc685ea3995fbf5072.html   还有ai,以及上一个链接的html引入实现
+
+若连接失效,建议搜索关键词:Hugo-Book主题添加评论功能
+
+总结:1.部署评论系统
+2.在hugo中引入评论系统(修改文件mybook-site/themes/hugo-book/layouts/_partials/docs/html-head.html和/root/hugo/mybook-site/themes/hugo-book/layouts/_partials/docs/comments.html)

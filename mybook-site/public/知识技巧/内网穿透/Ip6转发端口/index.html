@@ -13,7 +13,9 @@ netsh interface portproxy add v6tov4 listenport=8000 listenaddress=:: connectpor
   http://[2408:8270:824:9bd0:3479:1665:3169:2]:8000">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/Ip6%E8%BD%AC%E5%8F%91%E7%AB%AF%E5%8F%A3/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/Ip6%E8%BD%AC%E5%8F%91%E7%AB%AF%E5%8F%A3/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="本机有公网ip6和域名的情况下，可以直接用ip6端口转发代理ip4，然后ip6绑定域名，通过域名：端口，访问本地
@@ -366,7 +368,15 @@ netsh interface portproxy add v6tov4 listenport=8000 listenaddress=:: connectpor
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

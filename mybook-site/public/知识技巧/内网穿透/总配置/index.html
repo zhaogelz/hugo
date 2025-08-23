@@ -24,7 +24,9 @@ nohup ./frps -c ./frps.toml &amp;&gt; /dev/null &amp;
 公网服务器监控指标：http://&lt;公网IP&gt;:7500/metrics">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E6%80%BB%E9%85%8D%E7%BD%AE/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E6%80%BB%E9%85%8D%E7%BD%AE/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="==1====、把内网服务停止后（有时还要删除====.log====），再保存====frpc.toml====修改才能生效，否则不生效==
@@ -400,7 +402,15 @@ nohup ./frps -c ./frps.toml &amp;&gt; /dev/null &amp;</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

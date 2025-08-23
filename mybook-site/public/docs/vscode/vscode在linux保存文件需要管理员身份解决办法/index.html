@@ -9,7 +9,9 @@ lz是用户名
 该句作用：赋予用户lz，桌面下的git文件夹所有权，这样lz就有权修改了">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/vscode/vscode%E5%9C%A8linux%E4%BF%9D%E5%AD%98%E6%96%87%E4%BB%B6%E9%9C%80%E8%A6%81%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/vscode/vscode%E5%9C%A8linux%E4%BF%9D%E5%AD%98%E6%96%87%E4%BB%B6%E9%9C%80%E8%A6%81%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="修改文件夹所有权，如：sudo chown -R lz ~/桌面/git
@@ -375,7 +377,15 @@ lz是用户名<br>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

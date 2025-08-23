@@ -20,7 +20,9 @@ C:\Users\朝歌\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 一小时后关机：Shutdown -s -t 3600">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/Win10%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/Win10%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="重命名：f2
@@ -408,7 +410,15 @@ host位置：c:\windows\system32\drivers\etc</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

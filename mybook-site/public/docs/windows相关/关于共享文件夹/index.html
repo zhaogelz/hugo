@@ -6,7 +6,9 @@
 <meta name="description" content="有些文件夹共享后，能搜索到但无法打开，可以在文件夹 属性-》共享-》共享（s）里添加Everyone用户">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/%E5%85%B3%E4%BA%8E%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/docs/windows%E7%9B%B8%E5%85%B3/%E5%85%B3%E4%BA%8E%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="有些文件夹共享后，能搜索到但无法打开，可以在文件夹 属性-》共享-》共享（s）里添加Everyone用户">
@@ -366,7 +368,15 @@ https://github.com/alex-shpak/hugo-book
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

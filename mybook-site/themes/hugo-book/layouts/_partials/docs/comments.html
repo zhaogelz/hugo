@@ -1,2 +1,10 @@
-<!-- This partial can be replaced to support other commenting engines -->
-{{ template "_internal/disqus.html" . }}
+<!-- Waline 评论系统集成 -->
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', // TODO: 替换为你的 Waline 服务端地址
+  });
+</script>

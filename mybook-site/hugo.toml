@@ -80,10 +80,6 @@ enableGitInfo = true
   # You can also specify this parameter per page in front matter.
   BookToC = true
 
-  # (Optional, default favicon.png) Set the path to a favicon file.
-  # If the favicon is /static/favicon.png then the path would be favicon.png
-  # BookFavicon = 'favicon.png'
-
   # (Optional, default none) Set the path to a logo for the book.
   # If the logo is /static/logo.png then the path would be logo.png
   # BookLogo = 'logo.png'
@@ -136,3 +132,22 @@ enableGitInfo = true
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
   BookTranslatedOnly = false
+
+# [params.comments]
+#   enabled = true
+#   provider = 'waline'
+
+# [params.comments.waline]
+#   serverURL = 'https://waline-sigma-murex.vercel.app'
+#   lang = 'zh-CN'
+#   pageview = true
+#   emoji = [
+#     'https://unpkg.com/@waline/emojis@1.0.1/weibo',
+#     'https://unpkg.com/@waline/emojis@1.0.1/bilibili'
+#   ]
+#   requiredMeta = ['nick', 'mail']
+
+# [params.comments.waline.locale]
+#   admin = '博主'
+#   placeholder = '欢迎留言交流，支持Markdown语法 😊'
+

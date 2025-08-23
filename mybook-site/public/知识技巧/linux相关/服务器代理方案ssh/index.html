@@ -61,7 +61,9 @@ curl -4
 unset ALL_PROXY">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%A3%E7%90%86%E6%96%B9%E6%A1%88ssh/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%A3%E7%90%86%E6%96%B9%E6%A1%88ssh/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="网络来源服务器SSH配置
@@ -483,7 +485,15 @@ curl -4
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

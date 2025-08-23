@@ -17,7 +17,9 @@ loid 8419654723
 超级密码dahaiwoniu">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E5%AE%BD%E5%B8%A6%E5%AF%86%E7%A0%81/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E5%AE%BD%E5%B8%A6%E5%AF%86%E7%A0%81/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="当前时间: 2025-03-10 14-18 闲鱼大海蜗牛…
@@ -379,7 +381,15 @@ loid 8419654723<br>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

@@ -9,7 +9,9 @@
   https://github.com/pdone/lx-music-source">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E4%B9%A6%E6%BA%90%E6%BC%AB%E7%94%BB%E6%BA%90/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E4%B9%A6%E6%BA%90%E6%BC%AB%E7%94%BB%E6%BA%90/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="github搜索图源： https://github.com/ZGQ-inc/source
@@ -354,7 +356,15 @@ https://github.com/alex-shpak/hugo-book
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

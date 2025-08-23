@@ -14,7 +14,9 @@ ID服务器：144.34.232.235
 pKdIxb3bqjaBeshyjLIO&#43;24FcVJlsmz1vYASa23QuLM=">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/rustdesk/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/rustdesk/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="参考 https://rustdesk.com/docs/zh-cn/self-host/rustdesk-server-oss/aapanel/ 内的
@@ -368,7 +370,15 @@ k开源docker部署和客户端配置</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

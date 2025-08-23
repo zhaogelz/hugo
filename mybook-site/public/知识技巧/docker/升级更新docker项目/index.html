@@ -6,7 +6,9 @@
 <meta name="description" content="在docker desktop停止项目，github下载最新的，用旧版的.env文件还有docker-compose.yml替换新版的，然后用原本的启动命令启动">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E5%8D%87%E7%BA%A7%E6%9B%B4%E6%96%B0docker%E9%A1%B9%E7%9B%AE/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/docker/%E5%8D%87%E7%BA%A7%E6%9B%B4%E6%96%B0docker%E9%A1%B9%E7%9B%AE/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="在docker desktop停止项目，github下载最新的，用旧版的.env文件还有docker-compose.yml替换新版的，然后用原本的启动命令启动">
@@ -347,7 +349,15 @@ https://github.com/alex-shpak/hugo-book
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

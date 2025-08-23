@@ -21,7 +21,9 @@ rm -rf 目录名字
 objs目录 用来保存编译目录文件（可在此处修改make时编译方式）">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/%E7%9B%AE%E5%BD%95%E5%91%BD%E4%BB%A4/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/linux%E7%9B%B8%E5%85%B3/%E7%9B%AE%E5%BD%95%E5%91%BD%E4%BB%A4/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="pwd 显示当前路径
@@ -389,7 +391,15 @@ objs目录 用来保存编译目录文件（可在此处修改make时编译方�
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  

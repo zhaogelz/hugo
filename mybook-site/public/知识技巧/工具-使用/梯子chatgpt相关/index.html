@@ -68,7 +68,9 @@ San Jose
 ==教程：搜索====trojan====搭梯子==">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E6%A2%AF%E5%AD%90chatgpt%E7%9B%B8%E5%85%B3/">
+<meta name="color-scheme" content="light dark">
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" /><meta property="og:url" content="http://localhost:39346/%E7%9F%A5%E8%AF%86%E6%8A%80%E5%B7%A7/%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8/%E6%A2%AF%E5%AD%90chatgpt%E7%9B%B8%E5%85%B3/">
   <meta property="og:site_name" content="Hugo Book">
   <meta property="og:title" content="Hugo Book">
   <meta property="og:description" content="2025.3.8：购买搬瓦工ip（邮箱收藏可查）：144.34.232.235，用户名：root 密码：
@@ -548,7 +550,15 @@ San Jose</p>
       
   
   <div class="book-comments">
-
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-sigma-murex.vercel.app', 
+  });
+</script>
 </div>
   
  
