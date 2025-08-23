@@ -151,3 +151,6 @@ enableGitInfo = true
 #   admin = '博主'
 #   placeholder = '欢迎留言交流，支持Markdown语法 😊'
 
+[build]
+  noCache = true  # 禁用内存缓存
+  cleanDestinationDir = true  # 构建前清空public目录
