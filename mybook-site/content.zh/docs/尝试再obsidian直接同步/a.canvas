@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"7219df231c55cbb8","x":-260,"y":-120,"width":250,"height":60,"type":"text","text":"测试"},
+		{"id":"d110193670a9cc42","x":-135,"y":40,"width":250,"height":60,"type":"text","text":"白板"}
+	],
+	"edges":[
+		{"id":"e689426505b9b5f2","fromNode":"7219df231c55cbb8","fromSide":"right","toNode":"d110193670a9cc42","toSide":"left"}
+	]
+}
