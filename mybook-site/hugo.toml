@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ../..
 
 baseURL = 'http://0.0.0.0:1313/'
-title = 'Hugo Book'
+title = '联系方式qq：1423520005'
 theme = 'hugo-book'
 
 # Book configuration
