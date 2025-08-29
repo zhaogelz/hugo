@@ -2,7 +2,7 @@
 > 1、obsidian  https://github.com/obsidianmd/obsidian-releases/releases  
 > 2、安装git： https://git-scm.com/downloads/win
 > 3、访问gitee: https://gitee.com/
-> 4、此出提供我下载好的1、2链接安装包和.gitignore文件，可直接下载： http://xz.15390974.xyz/#/?code=700YK 
+> 4、此出提供我下载好的1、2链接安装包和.gitignore文件，可直接下载： http://xz.15390974.xyz/#/?code=700YK  
 
 ## 视频已提到但易忽略
 1、Gitee必须配置ssh，作用是将你电脑设为信任设备，免输入用户名，密码即可上传文件。有未知问题，导致电脑端输入密码无法同步，故必须。
