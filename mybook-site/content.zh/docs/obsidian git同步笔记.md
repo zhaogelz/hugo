@@ -1,17 +1,16 @@
 ## 下载访问链接：
-> 1、obsidian  https://github.com/obsidianmd/obsidian-releases/releases  
-> 2、安装git： https://git-scm.com/downloads/win
-> 3、访问gitee: https://gitee.com/
-> 4、此出提供我下载好的1、2链接安装包和.gitignore文件，可直接下载： http://xz.15390974.xyz/#/?code=700YK  
+> 1、obsidian  https://github.com/obsidianmd/obsidian-releases/releases    
+> 2、安装git： https://git-scm.com/downloads/win  
+> 3、访问gitee: https://gitee.com/  
+> 4、此出提供我下载好的1、2链接安装包和.gitignore文件，可直接下载： http://xz.15390974.xyz/#/?code=700YK   
 
 ## 视频已提到但易忽略
-1、Gitee必须配置ssh，作用是将你电脑设为信任设备，免输入用户名，密码即可上传文件。有未知问题，导致电脑端输入密码无法同步，故必须。
-
-2、必须在win的笔记文件夹下执行: `git config core.fileMode false`  #不要检查权限变化
-因为安卓和win文件夹权限不同,不这么设置,即使你没有任何改动,由于文件的操作权限变了，也会自动视为更改了全部文件，极易造成冲突，且影响同步速度。
-
-3、直接下载拉到文件夹也行。[点击下载.gitignore](.gitignore)
-在笔记文件夹下创建.gitignore文件（注意：开显示隐藏文件和后缀名），用于忽略不同设备的配置文件，我这个适配安卓和win，别的设备可能还需适当修改。
+1、Gitee必须配置ssh，作用是将你电脑设为信任设备，免输入用户名，密码即可上传文件。有未知问题，导致电脑端输入密码无法同步，故必须。  
+  
+2、必须在win的笔记文件夹下执行: `git config core.fileMode false`  #不要检查权限变化  
+因为安卓和win文件夹权限不同,不这么设置,即使你没有任何改动,由于文件的操作权限变了，也会自动视为更改了全部文件，极易造成冲突，且影响同步速度。  
+  
+3、在笔记文件夹下创建.gitignore文件（注意：开显示隐藏文件和后缀名），用于忽略不同设备的配置文件，我这个适配安卓和win，别的设备可能还需适当修改。
 ```
 # 忽略 Obsidian 缓存与临时文件
 .obsidian/cache/
