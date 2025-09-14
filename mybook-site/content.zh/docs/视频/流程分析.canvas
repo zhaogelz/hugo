@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"8f7f20ddd3e6e615","type":"text","text":"本地文件","x":-380,"y":-440,"width":250,"height":60},
+		{"id":"9df7363b3205cbef","type":"text","text":"软件公司云端服务器","x":-80,"y":-440,"width":250,"height":60},
+		{"id":"4e3562d49125055e","type":"text","text":"下载到本地","x":260,"y":-440,"width":250,"height":60},
+		{"id":"5fd6769ab5d202a9","type":"text","text":"本地","x":260,"y":-293,"width":250,"height":60},
+		{"id":"a4d656e71621b916","type":"text","text":"","x":-380,"y":-293,"width":250,"height":60},
+		{"id":"532ea83c80974446","type":"text","text":"某个服务器：git服务器。\ngithub，gitee免费服务。","x":-80,"y":-320,"width":250,"height":114},
+		{"id":"1807ab3333a30e9e","type":"text","text":"同步","x":506,"y":-120,"width":94,"height":60},
+		{"id":"9e8902ddaa230e90","type":"text","text":"导入文件夹，并配置","x":159,"y":20,"width":250,"height":60},
+		{"id":"2f0b96b26c029abb","type":"text","text":"电脑端","x":-380,"y":-120,"width":124,"height":60},
+		{"id":"ad2b41b6bb579f4b","type":"text","text":"安装git，obsidian（含插件）","x":-180,"y":-120,"width":260,"height":60},
+		{"id":"15cbf24f9e940424","type":"text","text":"手机端","x":-380,"y":20,"width":124,"height":60},
+		{"id":"624b489928377f58","type":"text","text":"传输文件夹（显示隐藏文件）","x":-180,"y":20,"width":264,"height":60},
+		{"id":"86f3873274df590f","type":"text","text":"配置gitee，以及插件","x":159,"y":-115,"width":250,"height":50},
+		{"id":"03ac4605cc6c5d66","type":"text","text":"将线性蒙版从默认的水平变为垂直，再移动到最左边，实现隐藏进度条","x":-140,"y":530,"width":250,"height":120},
+		{"id":"a1a3a553588c9175","type":"text","text":"通过关键帧将蒙版从最左边移动到最右边，实现进度条效果","x":137,"y":546,"width":250,"height":88},
+		{"id":"85339182dbf7d58a","type":"text","text":"通过文本工具分段并输入文字","x":420,"y":560,"width":250,"height":60},
+		{"id":"27f677462a0b0200","type":"text","text":"随便找两张纯色图作为进度条，一张始终显示作为进度条背景，一张作为逐渐移动的进度条","x":-380,"y":500,"width":200,"height":180},
+		{"id":"bb72796cc7d340db","x":-180,"y":800,"width":473,"height":59,"type":"text","text":""},
+		{"id":"33bfc403cc1e5d82","x":-180,"y":800,"width":473,"height":59,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"c62c343348ec9b4b","fromNode":"8f7f20ddd3e6e615","fromSide":"right","toNode":"9df7363b3205cbef","toSide":"left"},
+		{"id":"997c3d853f9deeae","fromNode":"9df7363b3205cbef","fromSide":"right","toNode":"4e3562d49125055e","toSide":"left"},
+		{"id":"43ba77d84ce2db23","fromNode":"a4d656e71621b916","fromSide":"right","toNode":"532ea83c80974446","toSide":"left"},
+		{"id":"25300fdceb24848d","fromNode":"532ea83c80974446","fromSide":"right","toNode":"5fd6769ab5d202a9","toSide":"left"},
+		{"id":"e581b2dda96b8d30","fromNode":"2f0b96b26c029abb","fromSide":"right","toNode":"ad2b41b6bb579f4b","toSide":"left"},
+		{"id":"61927e54ea6c1b4c","fromNode":"ad2b41b6bb579f4b","fromSide":"right","toNode":"86f3873274df590f","toSide":"left"},
+		{"id":"3d93de4bc48bc72d","fromNode":"86f3873274df590f","fromSide":"right","toNode":"1807ab3333a30e9e","toSide":"left"},
+		{"id":"c6e798f45f7c4ed4","fromNode":"15cbf24f9e940424","fromSide":"right","toNode":"624b489928377f58","toSide":"left"},
+		{"id":"20f278a781c66a75","fromNode":"624b489928377f58","fromSide":"right","toNode":"9e8902ddaa230e90","toSide":"left"},
+		{"id":"3b7c29df61a5b779","fromNode":"27f677462a0b0200","fromSide":"right","toNode":"03ac4605cc6c5d66","toSide":"left"},
+		{"id":"d95fe33a19bb9625","fromNode":"03ac4605cc6c5d66","fromSide":"right","toNode":"a1a3a553588c9175","toSide":"left"},
+		{"id":"474dae98085d60d0","fromNode":"a1a3a553588c9175","fromSide":"right","toNode":"85339182dbf7d58a","toSide":"left"}
+	]
+}
