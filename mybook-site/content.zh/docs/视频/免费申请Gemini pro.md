@@ -1,3 +1,4 @@
+# 免费申请Gemini pro12月会员的踩坑及申请细节记录，想自己申请的最好看下我
 
 总结：需要有google服务的手机（有谷歌邮箱可以不用）+干净的IP，否则很难成功  
 推荐教程： https://www.bilibili.com/video/BV1EYhQz6ExN?vd_source=77dd2001c963cefc027557ff4cf526b6  
